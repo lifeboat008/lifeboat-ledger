@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Lifeboat</title>
+  <desc id="desc">A continuous dark path reaches toward a green bridge point that closes a gap.</desc>
+  <path d="M322 166c50-27 107 0 124 67" fill="none" stroke="#20242b" stroke-width="64" stroke-linecap="round"/>
+  <path d="M416 320c-46 43-103 27-140-28l-51-76c-31-46-73-61-114-38-42 24-54 77-26 119 27 42 86 49 129 18" fill="none" stroke="#20242b" stroke-width="64" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="435" cy="278" r="25" fill="#04bfa9"/>
+</svg>

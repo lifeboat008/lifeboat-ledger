@@ -1,0 +1,23 @@
+name: Go
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: lifeboat-ledger
+      - uses: actions/checkout@v4
+        with:
+          repository: lifeboat008/lifeboat-protocol
+          ref: v0.1.0
+          path: lifeboat-protocol
+          token: ${{ secrets.MODULES_READ_TOKEN }}
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: lifeboat-ledger/go.mod
+      - run: go work init ./lifeboat-protocol ./lifeboat-ledger
+      - run: go test ./lifeboat-ledger/...
+      - run: go vet ./lifeboat-ledger/...
