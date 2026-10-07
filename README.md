@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo.svg" alt="Lifeboat logo" width="112"></p>
+
 # lifeboat-ledger
 
 Stellar payment boundary for Lifeboat, written in Go.
