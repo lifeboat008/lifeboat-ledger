@@ -23,3 +23,7 @@ Claim review, sponsor policy, HTTP endpoints, or GitHub evidence collection.
 Run `go test ./...` with access to the private, tagged `lifeboat-protocol` dependency. Go 1.26 is required. Do not use this testnet pilot for real funds.
 
 Product PRD and architecture live in the parent `lifeboat/docs` folder in the local workspace.
+
+## Contributing and security
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for pull requests, [SECURITY.md](SECURITY.md) for private vulnerability reports, and [LICENSE](LICENSE) for MIT terms.
