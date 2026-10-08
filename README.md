@@ -2,6 +2,8 @@
 
 # lifeboat-ledger
 
+[![Go CI](https://github.com/lifeboat008/lifeboat-ledger/actions/workflows/ci.yml/badge.svg)](https://github.com/lifeboat008/lifeboat-ledger/actions/workflows/ci.yml)
+
 Stellar payment boundary for Lifeboat, written in Go.
 
 ## Owns
@@ -20,10 +22,12 @@ Claim review, sponsor policy, HTTP endpoints, or GitHub evidence collection.
 
 `TestnetGateway` loads the source account sequence from testnet Horizon. Supply its signing key at runtime from a secret manager or environment variable. This module does not store the key, maintain budgets, or decide whether a claim deserves payment. The `lifeboat-api` repository handles those duties and records the receipt.
 
-Run `go test ./...` with access to the private, tagged `lifeboat-protocol` dependency. Go 1.26 is required. Do not use this testnet pilot for real funds.
+Run `go test ./...` and `go vet ./...` with Go 1.26.3 or newer. The tagged `lifeboat-protocol` dependency is public; no module token is needed. Do not use this testnet pilot for real funds.
 
-Product PRD and architecture live in the parent `lifeboat/docs` folder in the local workspace.
+The [product requirements](https://github.com/lifeboat008/lifeboat-api/blob/main/product/docs/PRD.md), [architecture](https://github.com/lifeboat008/lifeboat-api/blob/main/product/docs/ARCHITECTURE.md), and [Wave plan](https://github.com/lifeboat008/lifeboat-api/blob/main/product/docs/WAVE.md) are versioned in `lifeboat-api`.
 
 ## Contributing and security
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for pull requests, [SECURITY.md](SECURITY.md) for private vulnerability reports, and [LICENSE](LICENSE) for MIT terms.
+
+Maintainers: [lifeboat008](https://github.com/lifeboat008). Discuss public work in [issues](https://github.com/lifeboat008/lifeboat-ledger/issues); report vulnerabilities privately as described in SECURITY.md. This pilot has not had a formal security audit.
